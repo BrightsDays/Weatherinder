@@ -1,6 +1,6 @@
-let fetchRain = (selector) => {
+let fetchRain = (selector, token) => {
     async function load() {
-        let url = `http://api.openweathermap.org/data/2.5/weather?q=${selector}&APPID=e050de9385462b546f2d3a2143ebb69f`;
+        let url = `http://api.openweathermap.org/data/2.5/weather?q=${selector}&APPID=${token}`;
         let obj = await (await fetch(url)).json();
         weather.textContent = `${obj.weather[0].description}`;
     }
@@ -15,5 +15,5 @@ const cityInput = document.querySelector('.form__city'),
 showWeather.addEventListener('click', (e) => {
     e.preventDefault();
 
-    fetchRain(cityInput.value);
+    fetchRain(cityInput.value, '');
 });
