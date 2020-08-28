@@ -1,0 +1,132 @@
+*
+    margin: 0
+    padding: 0
+
+body
+    background: url('img/beautiful-paradise-of-clouds-in-sky.jpg') 100% top no-repeat
+    background-size: cover
+    background-attachment: fixed
+    font-family: 'Montserrat'
+
+    .box
+        position: relative
+        max-width: 1500px
+        margin: 0 auto
+        padding: 100px 25px 0
+        display: flex
+        flex-flow: row
+        flex-wrap: wrap
+        justify-content: space-between
+
+        .header
+            flex-basis: 100em
+            color: #ffffff
+            font-size: 46px
+            margin-bottom: 150px
+
+        .about
+            display: inline-block
+            vertical-align: top
+            font-size: 32px
+            flex-basis: 45%
+            margin-bottom: 30px
+
+        .form
+            display: inline-block
+            border: 3px solid rgba(251,251,251, .8)
+            padding: 50px
+            border-radius: 20px
+            flex-basis: 400px
+            max-width: 100%
+            margin-bottom: 20px
+
+            input:-webkit-autofill,
+            input:-webkit-autofill:hover, 
+            input:-webkit-autofill:focus,
+            textarea:-webkit-autofill,
+            textarea:-webkit-autofill:hover,
+            textarea:-webkit-autofill:focus,
+            select:-webkit-autofill,
+            select:-webkit-autofill:hover,
+            select:-webkit-autofill:focus
+                -webkit-text-fill-color: #ffffff
+                transition: background-color 5000s ease-in-out 0s
+
+            .form__text
+                width: calc(100% - 20px)
+                font-size: 32px
+                padding: 10px
+                box-sizing: content-box
+                border: 1.5px solid #ffffff
+                border-radius: 5px
+                background: none
+                color: #ffffff
+                margin-bottom: 30px
+
+                &:focus
+                    outline: none
+
+                &::placeholder
+                    color: rgba(251,251,251, .5)
+
+            .form__submit
+                width: 101%
+                font-size: 32px
+                font-weight: bold
+                padding: 10px 0
+                border: 1.5px solid #ffffff
+                border-radius: 5px
+                background: rgba(251,251,251, .3)
+                color: #ffffff
+                cursor: pointer
+                transition: all 0.8s
+
+                &:hover
+                    background-color: rgba(251,251,251, .5)
+
+                &:focus
+                    outline: none
+
+        .form__answer
+            position: absolute
+            top: 225px
+            right: 25px
+            font-size: 32px
+
+@media screen and ( max-width: 991px )
+    body
+        .box
+            width: 600px
+            max-width: calc(100% - 20px)
+            padding: 20px 10px 0
+            justify-content: center
+
+            .header
+                font-size: 30px
+                margin-bottom: 30px
+
+            .about
+                font-size: 26px
+                flex-basis: 100%
+
+            .form
+                border-radius: 10px
+                padding: 20px
+
+
+@media screen and ( max-width: 600px )
+    body
+        .box
+            .header
+                font-size: 1em
+
+            .about
+                font-size: 1.3em
+
+            .form
+                .form__text
+                    font-size: 22px
+                    margin-bottom: 10px
+
+                .form__submit
+                    font-size: 22px

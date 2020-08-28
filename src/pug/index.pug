@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+html(lang="en")
+
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(
+                rel='stylesheet', 
+                href='https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap'
+            )
+        link(rel='stylesheet', href='style.css')
+        title Weatherinder
+        
+    body
+        .box
+            header.header
+                h1 Weatherinder 🌧️
+
+            .about
+                p 
+                    | Sometimes the rain can catch you by surprise, 
+                    | which can lead to colds and more unpleasant consequences.<br>
+                    | Weatherinder's bot will warn you daily about the weather in your city 
+                    | and whether to take an umbrella with you!
+                br
+                p Supported messengers:
+
+            .form
+                form(action="")
+                    input.form__text(type="text" placeholder="Name")
+                    input.form__text(type="text" placeholder="Email")
+                    input.form__text.form__city(type="text" placeholder="Your city")
+                    button.form__submit Whats weather?
+        
+            .form__answer Weather
+
+    script(src="script.js")

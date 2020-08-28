@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: url("img/beautiful-paradise-of-clouds-in-sky.jpg") 100% top no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Montserrat'; }
+  body .box {
+    position: relative;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 25px 0;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    body .box .header {
+      flex-basis: 100em;
+      color: #ffffff;
+      font-size: 46px;
+      margin-bottom: 150px; }
+    body .box .about {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 32px;
+      flex-basis: 45%;
+      margin-bottom: 30px; }
+    body .box .form {
+      display: inline-block;
+      border: 3px solid rgba(251, 251, 251, 0.8);
+      padding: 50px;
+      border-radius: 20px;
+      flex-basis: 400px;
+      max-width: 100%;
+      margin-bottom: 20px; }
+      body .box .form input:-webkit-autofill,
+      body .box .form input:-webkit-autofill:hover,
+      body .box .form input:-webkit-autofill:focus,
+      body .box .form textarea:-webkit-autofill,
+      body .box .form textarea:-webkit-autofill:hover,
+      body .box .form textarea:-webkit-autofill:focus,
+      body .box .form select:-webkit-autofill,
+      body .box .form select:-webkit-autofill:hover,
+      body .box .form select:-webkit-autofill:focus {
+        -webkit-text-fill-color: #ffffff;
+        transition: background-color 5000s ease-in-out 0s; }
+      body .box .form .form__text {
+        width: calc(100% - 20px);
+        font-size: 32px;
+        padding: 10px;
+        box-sizing: content-box;
+        border: 1.5px solid #ffffff;
+        border-radius: 5px;
+        background: none;
+        color: #ffffff;
+        margin-bottom: 30px; }
+        body .box .form .form__text:focus {
+          outline: none; }
+        body .box .form .form__text::placeholder {
+          color: rgba(251, 251, 251, 0.5); }
+      body .box .form .form__submit {
+        width: 101%;
+        font-size: 32px;
+        font-weight: bold;
+        padding: 10px 0;
+        border: 1.5px solid #ffffff;
+        border-radius: 5px;
+        background: rgba(251, 251, 251, 0.3);
+        color: #ffffff;
+        cursor: pointer;
+        transition: all 0.8s; }
+        body .box .form .form__submit:hover {
+          background-color: rgba(251, 251, 251, 0.5); }
+        body .box .form .form__submit:focus {
+          outline: none; }
+    body .box .form__answer {
+      position: absolute;
+      top: 225px;
+      right: 25px;
+      font-size: 32px; }
+
+@media screen and (max-width: 991px) {
+  body .box {
+    width: 600px;
+    max-width: calc(100% - 20px);
+    padding: 20px 10px 0;
+    justify-content: center; }
+    body .box .header {
+      font-size: 30px;
+      margin-bottom: 30px; }
+    body .box .about {
+      font-size: 26px;
+      flex-basis: 100%; }
+    body .box .form {
+      border-radius: 10px;
+      padding: 20px; } }
+
+@media screen and (max-width: 600px) {
+  body .box .header {
+    font-size: 1em; }
+  body .box .about {
+    font-size: 1.3em; }
+  body .box .form .form__text {
+    font-size: 22px;
+    margin-bottom: 10px; }
+  body .box .form .form__submit {
+    font-size: 22px; } }
