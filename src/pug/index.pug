@@ -22,16 +22,15 @@ html(lang="en")
                     | which can lead to colds and more unpleasant consequences.<br>
                     | Weatherinder's bot will warn you daily about the weather in your city 
                     | and whether to take an umbrella with you!
-                br
                 p Supported messengers:
+                a(href="https://t.me/weatherinder_bot" target="_blank") 
+                    img.messenger(src="img/Telegram_logo.svg", alt="Telegram")
 
             .form
                 form(action="")
-                    input.form__text(type="text" placeholder="Name")
-                    input.form__text(type="text" placeholder="Email")
-                    input.form__text.form__city(type="text" placeholder="Your city")
-                    button.form__submit Whats weather?
-        
-            .form__answer Weather
+                    select.form__text
+                        option(value="Saint-Ptetersburg") Saint-Ptetersburg
+                    .form__answer Weather
+                    button.form__submit It's rainy?
 
     script(src="script.js")

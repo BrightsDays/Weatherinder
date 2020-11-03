@@ -25,8 +25,12 @@ body {
       display: inline-block;
       vertical-align: top;
       font-size: 32px;
-      flex-basis: 45%;
+      flex-basis: 50%;
       margin-bottom: 30px; }
+      body .box .about p {
+        margin-bottom: 20px; }
+    body .box .messenger {
+      width: 50px; }
     body .box .form {
       display: inline-block;
       border: 3px solid rgba(251, 251, 251, 0.8);
@@ -46,6 +50,8 @@ body {
       body .box .form select:-webkit-autofill:focus {
         -webkit-text-fill-color: #ffffff;
         transition: background-color 5000s ease-in-out 0s; }
+      body .box .form select::-ms-expand {
+        display: none; }
       body .box .form .form__text {
         width: calc(100% - 20px);
         font-size: 32px;
@@ -76,12 +82,12 @@ body {
         body .box .form .form__submit:focus {
           outline: none; }
     body .box .form__answer {
-      position: absolute;
-      top: 225px;
-      right: 25px;
-      font-size: 32px; }
+      font-size: 32px;
+      margin-bottom: 30px;
+      min-height: 120px;
+      text-align: center; }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1170px) {
   body .box {
     width: 600px;
     max-width: calc(100% - 20px);
@@ -89,7 +95,8 @@ body {
     justify-content: center; }
     body .box .header {
       font-size: 30px;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      text-align: center; }
     body .box .about {
       font-size: 26px;
       flex-basis: 100%; }

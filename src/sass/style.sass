@@ -28,8 +28,14 @@ body
             display: inline-block
             vertical-align: top
             font-size: 32px
-            flex-basis: 45%
+            flex-basis: 50%
             margin-bottom: 30px
+
+            p
+                margin-bottom: 20px
+
+        .messenger
+            width: 50px
 
         .form
             display: inline-block
@@ -51,6 +57,9 @@ body
             select:-webkit-autofill:focus
                 -webkit-text-fill-color: #ffffff
                 transition: background-color 5000s ease-in-out 0s
+
+            select::-ms-expand
+                display: none
 
             .form__text
                 width: calc(100% - 20px)
@@ -88,12 +97,12 @@ body
                     outline: none
 
         .form__answer
-            position: absolute
-            top: 225px
-            right: 25px
             font-size: 32px
+            margin-bottom: 30px
+            min-height: 120px
+            text-align: center
 
-@media screen and ( max-width: 991px )
+@media screen and ( max-width: 1170px )
     body
         .box
             width: 600px
@@ -104,6 +113,7 @@ body
             .header
                 font-size: 30px
                 margin-bottom: 30px
+                text-align: center
 
             .about
                 font-size: 26px
